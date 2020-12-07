@@ -7,19 +7,20 @@
 <body>
 <marquee>Loại bỏ phần tử của mảng nếu phần tử mảng trùng với giá tị nhập vào</marquee>
 <script>
-    function tryRemoveFromArray(arr, value) {
+    function tryRemoveFromArray(arr, valu) {
+        let newArr =[];
         for (let i = 0; i < arr.length; i++) {
-            if (value == arr[i]) {
-                arr.splice(i, 1)
+            if (arr[i] != valu) {
+                newArr.push(arr[i])
             }
         }
-        alert("Mảng trả vể sau khi tìm kiếm phần tử là:"+arr);
+        return newArr;
     }
 
     let str = prompt("Mời bạn nhập chuỗi sô được cách nhau bằng dấu phảy:");
-    arr = str.split(",");
-    let value = prompt("Mời bạn nhập giá trị value")
-    tryRemoveFromArray(arr, value);
+    let arr1 = str.split(",");
+    let valu = prompt("Mời bạn nhập giá trị valu");
+   alert(tryRemoveFromArray(arr1, valu));
 </script>
 </body>
 </html>
