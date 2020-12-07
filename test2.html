@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<marquee>Loại bỏ phần tử của mảng nếu phần tử mảng trùng với giá tị nhập vào</marquee>
+<script>
+    function tryRemoveFromArray(arr, value) {
+        for (let i = 0; i < arr.length; i++) {
+            if (value == arr[i]) {
+                arr.splice(i, 1)
+            }
+        }
+        alert("Mảng trả vể sau khi tìm kiếm phần tử là:"+arr);
+    }
+
+    let str = prompt("Mời bạn nhập chuỗi sô được cách nhau bằng dấu phảy:");
+    arr = str.split(",");
+    let value = prompt("Mời bạn nhập giá trị value")
+    tryRemoveFromArray(arr, value);
+</script>
+</body>
+</html>

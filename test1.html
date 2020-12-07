@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findmax(arr) {
+        let max = parseInt(arr[0]);
+        for (let i = 0; i < arr.length; i++) {
+            if (max <= parseInt(arr[i])) {
+                max = arr[i];
+            }
+        }
+        alert("Phan tu lon nhat trong mang la" + max);
+    }
+
+    const INPT = prompt('Nhập chuỗi các phần tử cách nhau dấu phẩy');
+    let arr = INPT.split(',');
+    findmax(arr);
+</script>
+</body>
+</html>
