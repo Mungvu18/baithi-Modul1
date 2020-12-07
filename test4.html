@@ -13,7 +13,7 @@
         this.radius = radius;
         this.color = color;
         this.drawCircle = function (canvas) {
-            let ctx = canvas.getContext("2d")
+            let ctx = canvas.getContext("2d");
             ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
             ctx.fillStyle = this.color;
             ctx.fill();
